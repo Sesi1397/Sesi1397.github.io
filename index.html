@@ -1,172 +1,207 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Sesidhar Vullapu | Transport Planner & Researcher</title>
+    <title>V Sai Sesidhar | Transport Systems Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient { background: radial-gradient(circle at top right, #eff6ff, #ffffff); }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226, 232, 240, 0.8); }
+        .section-title { position: relative; display: inline-block; padding-bottom: 8px; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 40px; height: 4px; background: #2563eb; border-radius: 2px; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 scroll-smooth">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <span class="font-bold text-xl tracking-tight uppercase">S. Sesidhar V.</span>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">V</div>
+                <span class="font-extrabold text-xl tracking-tighter">V SAI <span class="text-blue-600">SESIDHAR</span></span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-bold uppercase tracking-wider text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-                <a href="#education" class="hover:text-blue-600 transition">Education</a>
+                <a href="#software" class="hover:text-blue-600 transition">Expertise</a>
                 <a href="#publications" class="hover:text-blue-600 transition">Publications</a>
-                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="SesidharV.pdf" download class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Resume <i class="fa-solid fa-download ml-2"></i></a>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="pt-32 pb-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Sai Sesidhar <span class="gradient-text">Vullapu</span></h1>
-            <p class="text-xl text-slate-600 mb-8 leading-relaxed">
-                Doctoral Researcher in Transportation Systems at <span class="font-semibold text-slate-800">IIT Kharagpur</span>. 
-                [cite_start]Expert in Transport Planning, Geo-informatics, and Machine Learning for sustainable infrastructure[cite: 6, 7].
-            </p>
-            <div class="flex justify-center gap-4">
-                <a href="mailto:sesi.vegeta@gmail.com" class="bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition">Email Me</a>
-                <a href="https://www.linkedin.com/in/sai-sesidhar-transport-planner/" class="border border-slate-300 px-6 py-3 rounded-full font-medium hover:bg-slate-100 transition">LinkedIn</a>
+    <header id="about" class="pt-40 pb-20 hero-gradient px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/3" data-aos="fade-right">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img src="Sesi_Formal.jpg" alt="V Sai Sesidhar" class="relative rounded-3xl w-full aspect-square object-cover shadow-2xl grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+            <div class="w-full lg:w-2/3" data-aos="fade-left">
+                <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest mb-6 inline-block">Doctoral Researcher @ IIT Kharagpur</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 mb-6 leading-tight">V Sai <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Sesidhar</span></h1>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl">
+                    Specializing in <span class="font-bold text-slate-800">Transportation Systems</span> and <span class="font-bold text-slate-800">Geo-informatics</span>. Currently developing ML-driven sequential probabilistic models to enhance road safety in mixed traffic conditions.
+                </p>
+                <div class="flex flex-wrap gap-6 mb-10">
+                    <a href="mailto:sesi.vegeta@gmail.com" class="flex items-center gap-3 font-bold text-slate-700 hover:text-blue-600 transition"><i class="fa-solid fa-envelope text-blue-600"></i> sesi.vegeta@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/sai-sesidhar-transport-planner/" target="_blank" class="flex items-center gap-3 font-bold text-slate-700 hover:text-blue-600 transition"><i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn</a>
+                    <span class="flex items-center gap-3 font-bold text-slate-700"><i class="fa-solid fa-phone text-blue-600"></i> +91 8501896638</span>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="bg-white border-y border-slate-200 py-12">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            [cite_start]<div><p class="text-3xl font-bold text-blue-600">PhD</p><p class="text-slate-500 text-sm">IIT Kharagpur [cite: 14]</p></div>
-            [cite_start]<div><p class="text-3xl font-bold text-blue-600">2+</p><p class="text-slate-500 text-sm">Years Teaching [cite: 35, 50]</p></div>
-            [cite_start]<div><p class="text-3xl font-bold text-blue-600">5+</p><p class="text-slate-500 text-sm">Publications [cite: 107-128]</p></div>
-            [cite_start]<div><p class="text-3xl font-bold text-blue-600">PTV</p><p class="text-slate-500 text-sm">Certified Specialist [cite: 155]</p></div>
+    <section id="experience" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-16 section-title uppercase tracking-tight">Professional Experience</h2>
+            <div class="space-y-12">
+                <div class="grid lg:grid-cols-4 gap-4" data-aos="fade-up">
+                    <div class="lg:col-span-1"><p class="font-bold text-blue-600 uppercase text-sm tracking-widest">07/2023 — Present</p></div>
+                    <div class="lg:col-span-3 border-l-2 border-slate-100 pl-8 pb-10">
+                        <h3 class="text-2xl font-bold mb-2">Research Scholar & Teaching Assistant</h3>
+                        <p class="text-slate-500 font-bold mb-4">Ranbir and Chitra Gupta School of Infrastructure Design and Management, IIT Kharagpur</p>
+                        <ul class="space-y-3 text-slate-600 list-disc ml-4">
+                            <li>Leading research on driving behaviour using <span class="text-slate-900 font-semibold">Machine Learning</span> and sequential probabilistic models.</li>
+                            <li>Instructional Assistant for <span class="italic">Multimodal Urban Transport Systems</span> (MUTS) and <span class="italic">Public Transport Planning</span>.</li>
+                            <li>Core member of organizing committee for International Conferences on Infrastructure Sustainability.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-4 gap-4" data-aos="fade-up">
+                    <div class="lg:col-span-1"><p class="font-bold text-slate-400 uppercase text-sm tracking-widest">07/2022 — 07/2023</p></div>
+                    <div class="lg:col-span-3 border-l-2 border-slate-100 pl-8 pb-10">
+                        <h3 class="text-2xl font-bold mb-2">Assistant Professor</h3>
+                        <p class="text-slate-500 font-bold mb-4">School of Planning and Architecture, Vijayawada</p>
+                        <p class="text-slate-600 mb-4 font-medium italic underline">Key Impact:</p>
+                        <ul class="space-y-3 text-slate-600 list-disc ml-4">
+                            <li>Developed travel demand models for Jodhpur and Dehradun-Mussoorie Tourist regions using <span class="font-bold">PTV VISUM</span>.</li>
+                            <li>Coordinated the 6-day Executive Development Programme on <span class="font-bold text-blue-600">Intersection Design</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main class="max-w-6xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
-        
-        <div class="lg:col-span-2 space-y-12">
-            <section id="experience">
-                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
-                    <span class="w-8 h-1 bg-blue-600 inline-block"></span> Work Experience
-                </h2>
-                
-                <div class="space-y-10 border-l-2 border-slate-200 ml-4 pl-8">
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
-                        <p class="text-sm font-bold text-blue-600 mb-1">2023 - Current</p>
-                        <h3 class="text-xl font-bold">Research Scholar & Teaching Assistant</h3>
-                        <p class="text-slate-600 mb-3">IIT Kharagpur | [cite_start]RCGSIDM [cite: 14, 15]</p>
-                        <ul class="text-slate-600 space-y-2 text-sm list-disc ml-4">
-                            [cite_start]<li>Leading research on driving behavior and safety using ML and sequential probabilistic models[cite: 69, 70].</li>
-                            [cite_start]<li>Managing consultancy projects including TUTEM (Urban Transit) and SAFAR (AI on Roads)[cite: 22, 23].</li>
-                        </ul>
-                    </div>
-
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
-                        <p class="text-sm font-bold text-blue-600 mb-1">2022 - 2023</p>
-                        <h3 class="text-xl font-bold">Assistant Professor</h3>
-                        [cite_start]<p class="text-slate-600 mb-3">School of Planning and Architecture Vijayawada [cite: 35]</p>
-                        <ul class="text-slate-600 space-y-2 text-sm list-disc ml-4">
-                            [cite_start]<li>Developed travel demand models for Jodhpur and Dehradun using PTV VISUM[cite: 38, 39].</li>
-                            [cite_start]<li>Instructed courses on Public Transport Planning and Freight Logistics[cite: 36].</li>
-                        </ul>
-                    </div>
-
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
-                        <p class="text-sm font-bold text-blue-600 mb-1">2021 - 2022</p>
-                        <h3 class="text-xl font-bold">Assistant Professor</h3>
-                        [cite_start]<p class="text-slate-600 mb-3">JNAFAU Hyderabad [cite: 50]</p>
-                        <ul class="text-slate-600 space-y-2 text-sm list-disc ml-4">
-                            [cite_start]<li>Principal Investigator for Logistics bundling research in Hyderabad[cite: 57].</li>
-                            [cite_start]<li>Planned the Charlapally Railway Station area redevelopment[cite: 56].</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="publications">
-                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
-                    <span class="w-8 h-1 bg-blue-600 inline-block"></span> Selected Publications
-                </h2>
-                <div class="space-y-6">
-                    <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">2026 - TRB Annual Meeting</span>
-                        [cite_start]<h3 class="font-bold mt-1 text-lg leading-snug">Multidimensional driving risk prediction: A machine learning approach with instrumented vehicle data [cite: 110]</h3>
-                        <p class="text-slate-500 text-sm mt-2">Sesidhar V.S, Arkopal. K.G., Madhumita P.</p>
-                    </div>
-                    <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">2024 - CTRG</span>
-                        [cite_start]<h3 class="font-bold mt-1 text-lg leading-snug">Analyzing driver emotion and behavior during peak and off-peak traffic conditions [cite: 128]</h3>
-                        <p class="text-slate-500 text-sm mt-2">Recommended for Transportation in Developing Economies.</p>
-                    </div>
-                    <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">2023 - Springer Geography</span>
-                        [cite_start]<h3 class="font-bold mt-1 text-lg leading-snug">Streamlining Freight Transport Through Planning Interventions in Vijayawada City [cite: 112, 113]</h3>
-                    </div>
-                </div>
-            </section>
+    <section id="software" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-extrabold mb-4 uppercase tracking-tight">Technical Stack & Expert Training</h2>
+            <p class="text-slate-400">Specialized tools and modeling software expertise</p>
         </div>
-
-        <div class="space-y-12">
-            <section id="education">
-                <h2 class="text-2xl font-bold mb-8">Education</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="font-bold">Ph.D. Transportation Systems</h4>
-                        [cite_start]<p class="text-sm text-slate-600">IIT Kharagpur (Ongoing) [cite: 65, 66]</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">M.A. Economics</h4>
-                        [cite_start]<p class="text-sm text-slate-600">IGNOU (2023-2025) [cite: 72]</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">M.Planning (Transport)</h4>
-                        <p class="text-sm text-slate-600 font-medium">SPA Vijayawada | [cite_start]Grade: 8.53 [cite: 77, 80]</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">PG Diploma in Applied Statistics</h4>
-                        [cite_start]<p class="text-sm text-slate-600">IGNOU (2020-2022) [cite: 84]</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h2 class="text-2xl font-bold mb-8">Technical Stack</h2>
-                <div class="flex flex-wrap gap-2">
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">PTV VISSIM / VISUM [cite: 103]</span>
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">ArcGIS / QGIS [cite: 103]</span>
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">Python & R [cite: 71, 104]</span>
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">Machine Learning [cite: 71]</span>
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">SPSS [cite: 71, 103]</span>
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">LaTeX [cite: 71, 104]</span>
-                    [cite_start]<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-medium">AnyLogic [cite: 104]</span>
-                </div>
-            </section>
-
-            <section class="p-6 bg-slate-900 text-white rounded-2xl shadow-xl">
-                <h3 class="text-lg font-bold mb-4">Contact Info</h3>
-                <div class="space-y-4 text-sm text-slate-300">
-                    [cite_start]<p class="flex items-center gap-3"><i class="fa-solid fa-envelope w-4"></i> sesi.vegeta@gmail.com [cite: 3]</p>
-                    [cite_start]<p class="flex items-center gap-3"><i class="fa-solid fa-phone w-4"></i> (+91) 8501896638 [cite: 3]</p>
-                    [cite_start]<p class="flex items-center gap-3"><i class="fa-solid fa-location-dot w-4"></i> IIT Kharagpur, India [cite: 10]</p>
-                </div>
-            </section>
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 text-center hover:border-blue-500 transition" data-aos="zoom-in">
+                <i class="fa-solid fa-microchip text-3xl text-blue-400 mb-4"></i>
+                <h4 class="font-bold">PTV VISSIM</h4>
+                <p class="text-xs text-slate-400 mt-2 italic">Micro-simulation</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 text-center hover:border-blue-500 transition" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-network-wired text-3xl text-blue-400 mb-4"></i>
+                <h4 class="font-bold">PTV VISUM</h4>
+                <p class="text-xs text-slate-400 mt-2 italic">Travel Demand</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 text-center hover:border-blue-500 transition" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-solid fa-earth-americas text-3xl text-blue-400 mb-4"></i>
+                <h4 class="font-bold">ArcGIS / QGIS</h4>
+                <p class="text-xs text-slate-400 mt-2 italic">Spatial Analysis</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 text-center hover:border-blue-500 transition" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-terminal text-3xl text-blue-400 mb-4"></i>
+                <h4 class="font-bold">Python & R</h4>
+                <p class="text-xs text-slate-400 mt-2 italic">ML & Data Science</p>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="py-12 border-t border-slate-200 text-center text-slate-500 text-sm">
-        <p>© 2026 Sai Sesidhar Vullapu. All rights reserved.</p>
+    <section id="lectures" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-extrabold mb-8 section-title uppercase">Expert Lectures</h2>
+                <div class="p-8 bg-blue-50 rounded-3xl border border-blue-100">
+                    <h3 class="text-xl font-bold mb-4">Geospatial Techniques for Transport Planning</h3>
+                    <p class="text-slate-600 mb-6 italic">A comprehensive session covering Network model structure, Graphic parameters, and Four-stage Demand modelling in PTV Visum.</p>
+                    <a href="https://www.youtube.com/live/FN30XdhXqsE" target="_blank" class="flex items-center gap-2 text-red-600 font-extrabold hover:underline">
+                        <i class="fa-brands fa-youtube text-2xl"></i> WATCH ON YOUTUBE
+                    </a>
+                </div>
+            </div>
+            <div class="grid gap-6" data-aos="fade-left">
+                <div class="p-6 border border-slate-100 rounded-2xl shadow-sm">
+                    <h4 class="font-bold">Programme Coordinator</h4>
+                    <p class="text-sm text-slate-500">6-day Executive Development Programme on Simulation Techniques for Intersection Design.</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl shadow-sm">
+                    <h4 class="font-bold">Resource Person</h4>
+                    <p class="text-sm text-slate-500">Workshop organized by RV College of Architecture, Bengaluru on Modeling Basics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-12 uppercase">Education & Qualifications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <p class="text-blue-600 font-bold mb-2">2023 - Present</p>
+                    <h3 class="font-bold text-lg mb-1">PhD (Transportation Systems)</h3>
+                    <p class="text-slate-500 text-sm italic mb-4">IIT Kharagpur</p>
+                    <p class="text-xs bg-slate-100 px-3 py-1 inline-block rounded font-bold uppercase">Pursuing</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <p class="text-blue-600 font-bold mb-2">2019 - 2021</p>
+                    <h3 class="font-bold text-lg mb-1">M.Planning (Transport)</h3>
+                    <p class="text-slate-500 text-sm italic mb-4">SPA Vijayawada</p>
+                    <p class="text-xs bg-green-50 text-green-700 px-3 py-1 inline-block rounded font-bold uppercase">Grade: 8.53</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <p class="text-blue-600 font-bold mb-2">Professional</p>
+                    <h3 class="font-bold text-lg mb-1">Associate Member</h3>
+                    <p class="text-slate-500 text-sm italic mb-4">ITPI (AITP/2021/0131)</p>
+                    <p class="text-xs bg-blue-100 text-blue-700 px-3 py-1 inline-block rounded font-bold uppercase">Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-12 section-title uppercase">Major Projects</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="p-10 bg-slate-900 text-white rounded-[40px] shadow-2xl overflow-hidden relative" data-aos="flip-up">
+                    <h3 class="text-2xl font-bold mb-4">Charlapally Station Area Plan</h3>
+                    <p class="text-slate-400 leading-relaxed italic mb-6">Masterplan to decongest Secunderabad terminal through integrated infrastructure redevelopment and traffic management.</p>
+                    <span class="text-blue-400 font-bold text-sm tracking-widest uppercase">Hyderabad</span>
+                </div>
+                <div class="p-10 bg-blue-600 text-white rounded-[40px] shadow-2xl overflow-hidden relative" data-aos="flip-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4">CMP Jodhpur City</h3>
+                    <p class="text-slate-100 leading-relaxed italic mb-6">Extensive on-site data collection and development of a Travel Demand Model using PTV VISUM for city-wide mobility planning.</p>
+                    <span class="text-blue-200 font-bold text-sm tracking-widest uppercase">Consultancy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-slate-950 text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.3em] mb-4">V Sai Sesidhar | Transport Planner | PhD Scholar</p>
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="https://www.linkedin.com/in/sai-sesidhar-transport-planner/" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                <a href="mailto:sesi.vegeta@gmail.com" class="text-slate-400 hover:text-white transition"><i class="fa-solid fa-envelope text-2xl"></i></a>
+            </div>
+            <p class="text-[10px] text-slate-700">© 2026 V SAI SESIDHAR. ALL RIGHTS RESERVED.</p>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 </html>
