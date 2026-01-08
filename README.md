@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# V Sai Sesidhar | Personal Portfolio
 
-This contains everything you need to run your app locally.
+A modern, interactive portfolio website showcasing expertise in transportation systems, urban mobility, freight logistics, and geospatial analysis.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ga8GPDh53ZhEVYzMJXzOAgGt9alhDobI
+🌐 **Live Site**: https://Sesi1397.github.io/
 
-## Run Locally
+## 🚀 Features
 
-**Prerequisites:**  Node.js
+- Sleek glassmorphism navigation with dark/light mode support
+- Dynamic mesh background with subtle animations
+- Interactive traffic simulation elements
+- AI-powered research assistant (Gemini integration)
+- Fully responsive design built with Tailwind CSS
+- Progressive Web App (PWA) ready
+- Sections: Hero, Experience, Skills, Education, Publications, Projects, Lectures, Contact
 
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **React** 19.2.3 + TypeScript
+- **Vite** 6.2.0 (build tool)
+- **Tailwind CSS** (styling)
+- **Font Awesome** (icons)
+- **Google Fonts** – Plus Jakarta Sans
+- **@google/genai** – Gemini AI integration
+- **GitHub Pages** – Deployment
+
+## 📦 Local Development
+
+### Prerequisites
+- Node.js (v18 or higher)
+
+### Setup
+```bash
+git clone https://github.com/Sesi1397/v-sai-sesidhar-portfolio.git
+cd v-sai-sesidhar-portfolio
+npm install
