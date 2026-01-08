@@ -99,7 +99,7 @@ const App: React.FC = () => {
             <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-xl font-black uppercase tracking-widest hover:text-blue-600 transition-colors">{link.label}</a>
           ))}
           <a 
-            href="https://raw.githubusercontent.com/Sesi1397/Sesi1397.github.io/main/SesidharV.pdf" 
+            href="https://github.com/Sesi1397/Sesi1397.github.io/blob/main/SesidharV.pdf" 
             download 
             className="w-full text-center bg-blue-600 text-white py-5 rounded-[2rem] font-bold uppercase tracking-widest text-sm"
           >
