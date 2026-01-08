@@ -75,7 +75,7 @@ const App: React.FC = () => {
               <i className={`fa-solid ${isDarkMode ? 'fa-sun' : 'fa-moon'}`} />
             </button>
             <a 
-              href="https://github.com/Sesi1397/Sesi1397.github.io/blob/main/SesidharV.pdf" 
+              href="https://github.com/Sesi1397/Sesi1397.github.io/blob/ab7e5c4418f5192b9351c0d3d4a83319b8ee93e5/SesidharV.pdf" 
               download 
               className="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-7 py-3 rounded-2xl hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white transition-all shadow-xl font-bold"
             >
