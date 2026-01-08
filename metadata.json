@@ -1,5 +1,27 @@
 {
   "name": "V Sai Sesidhar Portfolio",
+  "short_name": "Sesidhar",
   "description": "Professional portfolio for V Sai Sesidhar, Transport Systems Specialist and PhD Researcher at IIT Kharagpur, featuring an interactive traffic simulation background and AI-powered research assistant.",
-  "requestFramePermissions": []
+
+  "start_url": "/",
+  "scope": "/",
+
+  "display": "standalone",
+  "background_color": "#0b0f1a",
+  "theme_color": "#0b0f1a",
+
+  "requestFramePermissions": [],
+
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
