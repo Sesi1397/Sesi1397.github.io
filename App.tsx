@@ -75,7 +75,7 @@ const App: React.FC = () => {
               <i className={`fa-solid ${isDarkMode ? 'fa-sun' : 'fa-moon'}`} />
             </button>
             <a 
-              href="https://raw.githubusercontent.com/Sesi1397/Sesi1397.github.io/main/SesidharV.pdf" 
+              href="https://github.com/Sesi1397/Sesi1397.github.io/blob/ab7e5c4418f5192b9351c0d3d4a83319b8ee93e5/SesidharV.pdf" 
               download 
               className="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-7 py-3 rounded-2xl hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white transition-all shadow-xl font-bold"
             >
@@ -99,7 +99,7 @@ const App: React.FC = () => {
             <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-xl font-black uppercase tracking-widest hover:text-blue-600 transition-colors">{link.label}</a>
           ))}
           <a 
-            href="https://raw.githubusercontent.com/Sesi1397/Sesi1397.github.io/main/SesidharV.pdf" 
+            href="https://github.com/Sesi1397/Sesi1397.github.io/blob/main/SesidharV.pdf" 
             download 
             className="w-full text-center bg-blue-600 text-white py-5 rounded-[2rem] font-bold uppercase tracking-widest text-sm"
           >
